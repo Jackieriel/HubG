@@ -114,13 +114,14 @@ ul{
 
 /* NavBar */
 #navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     background: #FFFAFA;
     padding: 1rem;
     margin-bottom: 3rem;
+    width: 100%;
     
 }
 
@@ -144,7 +145,7 @@ ul{
 #showcase{
     display: flex;
     margin: 5rem 0;
-    padding: 4rem 3.65rem;
+    /* padding: 4rem 3.65rem; */
     /**/
 }
 #showcase .showcase-items{
