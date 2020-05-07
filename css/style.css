@@ -21,12 +21,6 @@ ul{
     list-style: none;
 }
 
-/* p{
-    padding: 0.75rem 0;
-} */
-
-
-
 /* Utility classes */
 .container{
     max-width: 1100px;
@@ -40,6 +34,18 @@ ul{
     max-width: auto;
 }
 
+.blue-circle{
+    background: #6dd1f3;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+}
+
+.blue-tag{
+    padding: 0 .25rem;
+    color: #fff !important;
+}
 .btn{
     display: inline-block;
     border: 1px solid #666363;
@@ -186,8 +192,6 @@ ul{
 #showcase{
     display: flex;
     margin: 5rem 0;
-    /* padding: 4rem 3.65rem; */
-    /**/
 }
 #showcase .showcase-items{
     justify-content: space-evenly;
@@ -352,8 +356,6 @@ hr.m-rule{
     justify-content: space-between;
     margin: 1rem 1rem 1rem 0;
     padding: 0 1rem;
-   
-    /* align-items: center; */
 }
 
 #testimonials  .testimonial-item{
@@ -386,7 +388,6 @@ hr.m-rule{
 }
 
 /* Section: Lead Instructors */
-
 #lead-instructors .instructors{
     display: flex;
     justify-content: space-between;
@@ -463,15 +464,10 @@ p{
 }
 
 /* Section: Welcome */
-
 .form-wrap{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* margin: 0 auto; */
-    
-    /* margin: 0 auto;
-    max-width: 100%; */
 }
 
 .form-wrapper{
@@ -488,7 +484,7 @@ p{
 }
 
 .form-group{
-    padding: 0.75rem;
+    padding: .65rem;
 }
 
 .form-group label{
@@ -502,8 +498,8 @@ p{
  
 }
 
-.form-group input[type="email"],[type="password"]{
-    padding: 0.75rem 2rem;
+.form-group input[type="email"],[type="password"],[type="text"]{
+    padding: 1rem;
     width: 100%;
     border: #72D3F2 1px solid;
 }
@@ -537,22 +533,80 @@ input[type="checkbox"]{
     color: #3BB1D7;
 }
 
+/* Section: Student Page */
+::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 
+/* Section: Programming */
+#program{
+    padding-top: 7rem;
+}
+#program .note-items{
+    display: flex;
+   flex-direction: column;
+}
+
+#program .course-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.533rem;
+    font-style: italic;
+}
 
 
+.course-underline{
+    border-bottom: 0.2rem solid #111;
+}
+.note-items .notes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem;
+    padding: .35rem 1.5rem;
+}
 
+.name-bg{
+    background: #19b4e7;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    padding: 0 .55rem;
+    height: 2.5rem;
+}
 
+#i-text{
+    padding: 0 .30rem;    
+}
 
+.note-list{
+    padding: 0 2.231rem;
+    width: 100%;
+    
+}
+.border-notes{
+    background: #ddd;
+    /* border: 1px solid #ddd; */
+    margin: 1rem auto;
+    padding: .56rem 0;
+}
 
+.note-lg{
+    padding: 1rem 0;
+}
 
-
-
-
-
-
-
-
+/* Section: Purchase */
+.purchase-bg{
+    background: linear-gradient(
+    to right, 
+    #ff9e2c 0%, 
+    #ff9e2c 50%, 
+    #b6701e 50%, 
+    #b6701e 100%
+    );
+}
 
 
 
