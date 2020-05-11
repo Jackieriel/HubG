@@ -71,10 +71,10 @@ ul{
 .p-5{   padding: 5rem;}
 
 /* Margin */
-.mb-1{  margin-bottom: 1rem}
-.mb-2{  margin-bottom: 2rem}
-.mb-3{  margin-bottom: 3rem}
-
+.mb-1{  margin-bottom: 1rem;}
+.mb-2{  margin-bottom: 2rem;}
+.mb-3{  margin-bottom: 3rem;}
+.ml-2{  margin-left: 0.55rem;}
 .bg-primary{
     background: #308ED7;
 }
@@ -90,6 +90,14 @@ ul{
     padding: 0.625rem 0.45rem;
     cursor: pointer;
     color: #065A74;
+}
+
+.btn-white{
+    display: inline-block;
+    background: #fff;
+    color: #065A74;
+    padding: 0.625rem 0.45rem;
+    cursor: pointer;
 }
 
 .btn-login{
@@ -172,6 +180,15 @@ ul{
     
 }
 
+#navbar-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    
+}
+
 #navbar ul{
     display: flex;
     align-items: center;
@@ -188,6 +205,9 @@ ul{
     color: #000;
 }
 
+#navbar .icon{
+    display: none;
+}
 /*section: Showcase */
 #showcase{
     display: flex;
@@ -338,6 +358,9 @@ ul{
     padding: 0 0.12rem;
 }
 
+.star-rates{
+    display: flex;
+}
 .price-tag{
     padding: 0 0.5rem;
 }
@@ -499,9 +522,10 @@ p{
 }
 
 .form-group input[type="email"],[type="password"],[type="text"]{
-    padding: 1rem;
+    padding: 1rem 2.7rem;
     width: 100%;
     border: #72D3F2 1px solid;
+    border-radius: 0.412rem
 }
 
 input[type="checkbox"]{
@@ -598,29 +622,132 @@ input[type="checkbox"]{
 }
 
 /* Section: Purchase */
-.purchase-bg{
-    background: linear-gradient(
-    to right, 
-    #ff9e2c 0%, 
-    #ff9e2c 50%, 
-    #b6701e 50%, 
-    #b6701e 100%
-    );
+#purchase .container{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 5rem 0; */
+   
+}
+.purchase-items{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Creates left Column */
+#purchase  .purchase-left{
+    height: 100vh;
+    flex: 0 0 48%;
+    padding: 9rem;
+    
+}
+
+#purchase .purchase-right{
+    display: flex;
+    justify-content: flex-end;
+    background: #72D3F2;
+    border-top-left-radius: 45% 50%;
+    border-bottom-left-radius: 45% 50%;
+    flex: 0 0 48%;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    /* position: relative;
+    z-index: 1; */
+    cursor: pointer;
+}
+
+.form-wrapped{
+    padding: 9rem;
+    margin: 0 2.9rem;
+}
+
+.form-wrapped .form-group-alt{
+   margin-bottom: 1rem;
+}
+
+.form-group-alt label{
+    display: block;
+}
+.form-group-alt input[type="number"]{
+   padding: 0.65rem;
+   width: 80%;
+   border-radius: 0.4125rem;
+   border: none;
 }
 
 
+.form-group-alt button{
+    background: transparent;
+    border: none;
+}
 
+/* Remove Arrows From Input Number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+/* Firefox */
+input[type=number]{
+    -moz-appearance: textfield;
+}
 
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    position: absolute;
+    left: 0;
+    top: 16.4375rem;
+    right: 10.4rem;  
+}
 
+/* Dropdown Button */
+.dropbtn {
+    color: #fff;
+    /* padding: 16px; */
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
 
+.cardholder-items{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+.input-details{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-
+.input-details input{
+    padding: 0 1.3rem;
+    margin: 0 .35rem;
+    width: 100%;
+}
 
 
 
