@@ -661,8 +661,9 @@ input[type="checkbox"]{
 }
 
 .form-wrapped{
-    padding: 9rem;
+    /* padding: 9rem; */
     margin: 0 2.9rem;
+    padding-top: 9rem;
 }
 
 .form-wrapped .form-group-alt{
@@ -679,6 +680,16 @@ input[type="checkbox"]{
    border: none;
 }
 
+.input-details input[type="month"]{
+    width: 20%;
+}
+.input-details input[type="number"]{
+    width: 20%;
+}
+
+.margin-left{
+    margin-left: 180px;
+}
 
 .form-group-alt button{
     background: transparent;
@@ -739,7 +750,7 @@ input[type=number]{
 }
 
 .input-details{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 

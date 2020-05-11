@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gtera &mdash; Hub</title>
     <link rel="stylesheet" href="../fontawesome-free-5.13.0-web/css/all.min.css">
-    <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and(min-width: 1100px)" href="css/widescreen.css">
+    <!-- you don't really need this -->
+    <!-- <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/mobile.css"> -->
+    <!-- <link rel="stylesheet" media="screen and(min-width: 1100px)" href="css/widescreen.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="purchase-bg" >
@@ -53,29 +54,29 @@
                             <div class="form-group-alt">
                                 <label for="number">Card Number</label>
                                 <input type="number" name="Card-Holder"  placeholder="**** **** **** 1234">
-                            <div>
-                            <div class="form-group-alt">
-                                <div class="dropdown">
-                                        <button onclick="myFunction()" class="dropbtn">VISA <i class="fas fa-caret-down ml-2"></i></button>
-                                        <div id="myDropdown" class="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                </div>
+                            
+                            
+                               <select name="card" id="card">
+                                   <option value="VISA">VISA</option>
+                                   <option value="MASTER">MASTER</option>
+                                   <option value="VERVE">VERVE</option>
+                               </select>
+
                             </div>
                             <div class="form-group-alt">
                                 <div class="cardholder-items">
                                     <label for="">
-                                        Expiration
+                                        Expiration  <span class="margin-left">CVC</span>
                                     </label>
                             
-                                    <label for="">
+                                    <!-- <label for="">
                                         CVC
-                                    </label>
+                                    </label> -->
                                 </div>
                                 <div class="input-details">
-                                    <input type="month" name="month" id="" placeholder="June">
-                                    <input type="number" name="CVC" id="cvc-number" placeholder="123"
+                                    <input type="month" class="month" name="month" id="" placeholder="June">
+                                    <input type="number" name="year" id="year" placeholder="123">
+                                    <input type="number" name="CVC" id="cvc-number" placeholder="123">
                                 </div>
                                 
                             </div>
